@@ -1,0 +1,408 @@
+body {
+    font-family: 'Microsoft Sans Serif', 'MS Sans Serif', 'Tahoma';
+    color: #333333;
+
+
+    /* IE7 sametimes has problems when background is used for just coloring */
+    background-color: white;
+    font-size: 12px;
+}
+
+.tt-times
+{
+	position:absolute;
+	display: table;
+	z-index:1;
+	left: 100px;
+	width: 100%;
+}
+.tt-time
+{
+    margin: 0px;
+	margin-left: -1px;
+	margin-top: -1px;
+	border-width: 0px;
+	border-right: 1px solid #ddd;
+	width: 45px;
+	height:607px;
+	position: absolute;
+}
+#wrapper {
+	padding: 0px;
+    /*padding: 30px 10px;*/
+    /*width: 981px;*/
+	width: 1080px;
+	position: relative;
+	top: -607px;
+}
+
+#timeline {
+    width: 60px;
+    /*margin-right: 10px;*/
+    display: relative;
+    float: left;
+}
+    #timeline ul {
+        padding: 0;
+        margin: 0;
+		padding-right: 10px;
+    }
+        #timeline li {
+            height: 30px;
+            font-size: 10px;
+            color: #CECECE;
+            list-style-type: none;
+            text-align: right;
+            position: relative;
+            top: -8px;
+        }
+        #timeline .minor{
+            top: -5px;
+        }
+            #timeline p {
+                display: block;
+                margin: 0;
+            }
+            #timeline .minor p {
+                width: auto;
+            }
+            #timeline .bold {
+                font-weight: bold;
+                font-size: 12px;
+                color: #686868;
+                margin-right:2px;
+            }
+
+#timeline2 {
+	position:relative;
+	z-index:0;
+	width: 100%;
+	height: 40px;
+/*
+	width: 1080px;
+	height: 40px;
+	position: relative;
+*/
+}
+
+#timeline2 .major{
+	/*font-family: 'Microsoft Sans Serif', 'MS Sans Serif', 'Tahoma';*/
+	font-family: 'Circular';
+	font-size: 16px;
+	font-weight:bold;
+	text-align:center;
+	line-height:40px;
+	width: 90px;
+	height:40px;
+	position: absolute;
+}
+
+#scheduler-wrapper{
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    background-color: #fafafa;
+    position: absolute;
+    margin-left: 100px;
+    width: 100%;
+	height: 607px;
+    /*padding: 0 10px;*/
+}
+
+
+    #scheduler1{
+		border-top: 1px solid #CCCCCC;
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler2{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler3{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler4{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler5{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler6{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+    #scheduler7{
+		border-bottom: 1px solid #CCCCCC;
+		height: 80;
+		width: 100%;
+        position: relative;
+    }
+
+    #scheduler1 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler1 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler1 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+
+    #scheduler2 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler2 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+			-moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler2 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+    #scheduler3 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler3 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler3 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+    #scheduler4 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler4 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler4 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+    #scheduler5 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler5 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler5 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+    #scheduler6 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler6 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler6 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+    #scheduler7 .event {
+        position: absolute;
+        overflow: hidden;
+		z-index:2;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler7 .event .bar{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler7 .event .content {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:top;
+            height: 100%;
+        }
+
+.inner-content{
+	padding: 8px;
+}
+.inner-content .event-title{
+	font-family: 'Microsoft Sans Serif', 'MS Sans Serif', 'Tahoma';
+	/*color: #4B6EA8;*/
+	font-size: 13px;
+	display: block;
+}
+.inner-content .event-location{
+	font-family: 'Microsoft Sans Serif', 'MS Sans Serif', 'Tahoma';
+	/*color: #999999;*/
+	font-size: 11px;
+	display: block;
+}
